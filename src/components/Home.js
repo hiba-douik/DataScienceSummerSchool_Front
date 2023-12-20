@@ -277,7 +277,7 @@ function Home(){
             <h5 className="title-small mb-1">Start learning online</h5>
             <h3 className="title-big">Enhance your skills with best online courses</h3>
             <a href="#started" className="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2">Get started now</a>
-            <a href="contact.html" className="btn btn-style btn-primary mt-sm-5 mt-4">Contact Us</a>
+            <Link to="/contact" className="btn btn-style btn-primary mt-sm-5 mt-4">Contact Us</Link>
           </div>
         </div>
       </div>

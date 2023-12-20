@@ -26,10 +26,10 @@ function Header(){
                   <Link className="nav-link" to="/about">About</Link>
                 </li>
                 <li className="nav-item @@courses__active">
-                  <a className="nav-link" href="courses.html">Courses</a>
+                  <a className="nav-link" href="/sessions">Sessions</a>
                 </li>
                 <li className="nav-item @@contact__active">
-                  <a className="nav-link" href="contact.html">Contact</a>
+                  <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
               </ul>
 
