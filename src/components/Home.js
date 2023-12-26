@@ -1,401 +1,306 @@
-import Footer from "./Footer"
-import Header from "./Header"
-import { Link } from "react-router-dom"
-function Home(){
+import Footer from "./Footer";
+import Header from "./Header";
+import { Link } from "react-router-dom";
+import image1 from '../IMAGES/logo_dataia.png';
+import image2 from '../IMAGES/logo_datascience_initiative.png';
+import image3 from '../IMAGES/logo_lix.png';
+import image4 from '../IMAGES/logo_stresstest.png';
+import image5 from '../IMAGES/lm.jpg';
+import image6 from '../IMAGES/flags/Algeria.jpg';
+import image7 from '../IMAGES/flags/Australia.jpg';
+import image8 from '../IMAGES/flags/Canada.jpg';
+import image9 from '../IMAGES/flags/Czech.jpg';
+import image10 from '../IMAGES/flags/Chile.jpg';
+import image11 from '../IMAGES/flags/Colombia.jpg';
+import image12 from '../IMAGES/flags/Belgium.jpg';
 
-    return(
-        <div>
-       <Header/>
+function Home() {
+  return (
+    <div>
+      <Header />
+
       <section className="w3l-main-slider" id="home">
-      <div className="companies20-content">
-        <div className="owl-one owl-carousel owl-theme">
-          <div className="item">
-            <li>
-              <div className="slider-info banner-view bg bg2">
-                <div className="banner-info">
-                  <div className="container">
-                    <div className="banner-info-bg">
-                      <h5>50% Discount on all Popular Courses</h5>
-                      <p className="mt-4 pr-lg-4">Take the first step to your journey to success with us</p>
-                      <a className="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> Ready to
-                        get started?</a>
+        <div className="companies20-content">
+          <section className="w3l-clients py-5" id="clients">
+            <div className="call-w3 py-md-4 py-2">
+              <div className="container">
+                <div className="company-logos text-center">
+                  <div className="row logos">
+                    <div className="col-lg-3 col-md-3 col-6 mt-lg-0 mt-4">
+                      <Link to={"https://www.polytechnique.edu/en"} target="_blank" rel="noopener noreferrer">
+                        <img src={image3} style={{ opacity: "1", maxWidth: "100%", height: "auto" }} alt="" className="img-fluid" />
+                      </Link>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-6 mt-md-0 mt-4">
+                      <Link to={"https://portail.polytechnique.edu/datascience/en"} target="_blank" rel="noopener noreferrer">
+                        <img src={image2} style={{ opacity: "1", maxWidth: "100%", height: "auto" }} alt="" className="img-fluid" />
+                      </Link>
+                    </div>
+
+                    <div className="col-lg-3 col-md-3 col-6">
+                      <Link to={"http://dataia.eu/"} target="_blank" rel="noopener noreferrer">
+                        <img src={image1} style={{ opacity: "1", maxWidth: "100%", height: "auto" }} alt="" className="img-fluid" />
+                      </Link>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-6 mt-lg-0 mt-4">
+                      <Link to={"https://www.polytechnique.edu/en"} target="_blank" rel="noopener noreferrer">
+                        <img src={image4} style={{ opacity: "1", maxWidth: "100%", height: "auto", marginTop: "50px" }} alt="" className="img-fluid" />
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-            </li>
-          </div>
-          <div className="item">
-            <li>
-              <div className="slider-info  banner-view banner-top1 bg bg2">
-                <div className="banner-info">
-                  <div className="container">
-                    <div className="banner-info-bg">
-                      <h5>Learn and Improve Yourself in Less Time</h5>
-                      <p className="mt-4 pr-lg-4">Our self-improvement courses are very effective</p>
-                      <a className="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> Ready to
-                        get started?</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </div>
-          <div className="item">
-            <li>
-              <div className="slider-info banner-view banner-top2 bg bg2">
-                <div className="banner-info">
-                  <div className="container">
-                    <div className="banner-info-bg">
-                      <h5>Be More Productive to Be More Successful</h5>
-                      <p className="mt-4 pr-lg-4">Don't waste your time, check out our productive courses</p>
-                      <a className="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> Ready to
-                        get started?</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </div>
-          <div className="item">
-            <li>
-              <div className="slider-info banner-view banner-top3 bg bg2">
-                <div className="banner-info">
-                  <div className="container">
-                    <div className="banner-info-bg">
-                      <h5>Enhance your skills with the best online courses</h5>
-                      <p className="mt-4 pr-lg-4">Take the first step to your journey to success with us</p>
-                      <a className="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> Ready to
-                        get started?</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </div>
-        </div>
-      </div>
-      <div className="waveWrapper waveAnimation">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-          <path d="M-5.07,73.52 C149.99,150.00 299.66,-102.13 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style={{ stroke: 'none' }}></path>
-        </svg>
-      </div>
-    </section>
-    <section className="w3l-courses">
-      <div className="blog pb-5" id="courses">
-        <div className="container py-lg-5 py-md-4 py-2">
-          <h5 className="title-small text-center mb-1">Join our learn Courses</h5>
-          <h3 className="title-big text-center mb-sm-5 mb-4">Featured Online <span>Courses</span></h3>
-          <div className="row">
-            {/* Individual course items */}
-            {/* Course Item 1 */}
-            <div className="col-lg-4 col-md-6 item">
-              {/* Card */}
-              <div className="card">
-                {/* Card Header */}
-                <div className="card-header p-0 position-relative">
-                  <Link to="#course-single" className="zoom d-block">
-                    <img className="card-img-bottom d-block" src="assets/images/c1.jpg" alt="Card imag cap" />
-                  </Link>
-                  <div className="post-pos">
-                    <a href="#reciepe" className="receipe blue">Beginner</a>
-                  </div>
-                </div>
-                {/* Card Body */}
-                <div className="card-body course-details">
-                  {/* Course Price and Review */}
-                  <div className="price-review d-flex justify-content-between mb-1 align-items-center">
-                    <p>$35.00</p>
-                    <ul className="rating-star">
-                      <li><span className="fa fa-star"></span></li>
-                      <li><span className="fa fa-star"></span></li>
-                      <li><span className="fa fa-star"></span></li>
-                      <li><span className="fa fa-star"></span></li>
-                      <li><span className="fa fa-star-o"></span></li>
-                    </ul>
-                  </div>
-                  {/* Course Description */}
-                  <a href="#course-single" className="course-desc">Open Programming Courses for everyone: Python</a>
-                  {/* Course Meta */}
-                  <div className="course-meta mt-4">
-                    <div className="meta-item course-lesson">
-                      <span className="fa fa-clock-o"></span>
-                      <span className="meta-value"> 20 hrs </span>
-                    </div>
-                    <div className="meta-item course-">
-                      <span className="fa fa-user-o"></span>
-                      <span className="meta-value"> 50 </span>
-                    </div>
-                  </div>
-                </div>
-                {/* Card Footer */}
-                <div className="card-footer">
-                  {/* Author */}
-                  <div className="author align-items-center">
-                    <img src="assets/images/a1.jpg" alt="" className="img-fluid rounded-circle" />
-                    <ul className="blog-meta">
-                      <li>
-                        <span className="meta-value mx-1">by</span> <a href="#author"> Olivia</a>
-                      </li>
-                      <li>
-                        <span className="meta-value mx-1">in</span> <a href="#author"> Programing</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
-            {/* Repeat the above structure for other course items */}
-            {/* ... */}
-          </div>
-          {/* More courses */}
-          <div className="mt-5 text-more">
-            <p className="pt-md-3 sample text-center">
-              Control your personal preference settings to get notified about appropriate courses
-              <a href="courses.html">View All Courses <span className="pl-2 fa fa-long-arrow-right"></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className="w3l-features py-5" id="facilities">
-      <div className="call-w3 py-lg-5 py-md-4 py-2">
-        <div className="container">
-          <div className="row main-cont-wthree-2">
-            <div className="col-lg-5 feature-grid-left">
-              <h5 className="title-small mb-1">Study and graduate</h5>
-              <h3 className="title-big mb-4">Our Facilities </h3>
-              <p className="text-para">Curabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed,
-                lacinia est. Quisque ut lectus consequat, venenatis eros et, commodo risus. Nullam sit amet laoreet
-                elit. Suspendisse non magna a velit efficitur. </p>
-              <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ab qui impedit,
-                libero illo quia sequi quibusdam iure. Error minus quod reprehenderit quae dolor velit soluta animi
-                voluptate dicta enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, provident!</p>
-              <a href="#url" className="btn btn-primary btn-style mt-md-5 mt-4">Discover More</a>
-            </div>
-            <div className="col-lg-7 feature-grid-right mt-lg-0 mt-5">
-              <div className="call-grids-w3 d-grid">
-                <div className="grids-1 box-wrap">
-                  <a href="#more" className="icon"><span className="fa fa-certificate"></span></a>
-                  <h4><a href="#feature" className="title-head">Global Certificate</a></h4>
-                  <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.</p>
-                </div>
-                <div className="grids-1 box-wrap">
-                  <a href="#more" className="icon"><span className="fa fa-book"></span></a>
-                  <h4><a href="#feature" className="title-head">Books & Library</a></h4>
-                  <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet laoreet.</p>
-                </div>
-                <div className="grids-1 box-wrap">
-                  <a href="#more" className="icon"><span className="fa fa-trophy"></span></a>
-                  <h4><a href="#feature" className="title-head">Scholarship</a></h4>
-                  <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet laoreet.</p>
-                </div>
-                <div className="grids-1 box-wrap">
-                  <a href="#more" className="icon"><span className="fa fa-graduation-cap"></span></a>
-                  <h4><a href="#feature" className="title-head">Alumni Support</a></h4>
-                  <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet laoreet.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div className="w3l-homeblock3 py-5">
-      <div className="container py-lg-5 py-md-4 py-2">
-        <h5 className="title-small text-center mb-1">From the news</h5>
-        <h3 className="title-big text-center mb-sm-5 mb-4">Latest <span>News</span></h3>
-        <div className="row top-pics">
-          {/* First News Item */}
-          <div className="col-md-6">
-            <div className="top-pic1">
-              <div className="card-body blog-details">
-                <a href="#blog-single" className="blog-desc">Enhance your educational skills and also experience with best online courses</a>
-                <div className="author align-items-center">
-                  <img src="assets/images/team1.jpg" alt="" className="img-fluid rounded-circle" />
-                  <ul className="blog-meta">
-                    <li>
-                      <a href="#author">Isabella ava</a>
-                    </li>
-                    <li className="meta-item blog-lesson">
-                      <span className="meta-value"> Nov 19, 2020 </span>. <span className="meta-value ml-2"><span className="fa fa-clock-o"></span> 1 min</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Second News Item */}
-          <div className="col-md-6 mt-md-0 mt-4">
-            <div className="top-pic2">
-              <div className="card-body blog-details">
-                <a href="#blog-single" className="blog-desc">Be more productive to be more Successful. Take your first jouney</a>
-                <div className="author align-items-center">
-                  <img src="assets/images/team2.jpg" alt="" className="img-fluid rounded-circle" />
-                  <ul className="blog-meta">
-                    <li>
-                      <a href="#author">Charlotte mia</a>
-                    </li>
-                    <li className="meta-item blog-lesson">
-                      <span className="meta-value"> Nov 19, 2020 </span>. <span className="meta-value ml-2"><span className="fa fa-clock-o"></span> 1 min</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            {/* Third News Item */}
-            <div className="mt-4">
-              <div className="top-pic3">
-                <div className="card-body blog-details">
-                  <a href="#blog-single" className="blog-desc"> Our self improvement courses are more effective. Start leaarning online</a>
-                  <div className="author align-items-center">
-                    <img src="assets/images/team3.jpg" alt="" className="img-fluid rounded-circle" />
-                    <ul className="blog-meta">
-                      <li>
-                        <a href="#author">Elizabeth</a>
-                      </li>
-                      <li className="meta-item blog-lesson">
-                        <span className="meta-value"> Nov 19, 2020 </span>. <span className="meta-value ml-2"><span className="fa fa-clock-o"></span> 1 min</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* View All Posts */}
-        <div className="mt-md-5 mt-4 text-more text-center">
-          <a href="blog.html">View All Posts <span className="pl-2 fa fa-long-arrow-right"></span></a>
-        </div>
-      </div>
-    </div>
-     {/* middle */}
-     <div className="middle py-5">
-        <div className="container py-lg-5 py-md-4 py-2">
-          <div className="welcome-left text-center py-lg-4">
-            <h5 className="title-small mb-1">Start learning online</h5>
-            <h3 className="title-big">Enhance your skills with best online courses</h3>
-            <a href="#started" className="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2">Get started now</a>
-            <Link to="/contact" className="btn btn-style btn-primary mt-sm-5 mt-4">Contact Us</Link>
-          </div>
-        </div>
-      </div>
-      {/* //middle */}
-      <section className="w3l-team py-5" id="team">
-        <div className="call-w3 py-lg-5 py-md-4">
-          <div className="container">
-            <div className="row main-cont-wthree-2">
-              <div className="col-lg-5 feature-grid-left">
-                <h5 className="title-small mb-1">Experienced professionals</h5>
-                <h3 className="title-big mb-4">Meet our teachers</h3>
-                <p className="text-para">Curabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed,
-                  lacinia est.
-                  Quisque ut lectus consequat, venenatis eros et, commodo risus. Nullam sit amet laoreet elit.
-                  Suspendisse non magna a velit efficitur. </p>
-                <p className="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ab qui impedit,
-                  libero illo
-                  quia sequi quibusdam iure. Error minus quod reprehenderit quae dolor velit soluta animi
-                  voluptate dicta enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, provident!
-                </p>
-                <a href="#url" className="btn btn-primary btn-style mt-md-5 mt-4">Discover More</a>
-              </div>
-              <div className="col-lg-7 feature-grid-right mt-lg-0 mt-5">
-                <div className="row">
-                  {/* Teacher Cards */}
-                  <div className="col-sm-6">
-                    <div className="box16">
-                      <a href="#url"><img src="assets/images/team1.jpg" alt="" className="img-fluid radius-image" /></a>
-                      <div className="box-content">
-                        <h3 className="title"><a href="#url">James</a></h3>
-                        <span className="post">Director</span>
-                        <ul className="social">
-                          <li>
-                          <Link to="#" className="facebook"><span className="fa fa-facebook-f"></span></Link>
-                              
-                          </li>
-                          <li>
-                            <Link to="#" className="twitter">
-                              <span className="fa fa-twitter"></span>
-                            </Link>
-                          </li>
-                        </ul>
+          </section>
+          <div className="owl-one owl-carousel owl-theme">
+            <div className="item">
+              <li>
+                <div className="slider-info banner-view bg bg2">
+                  <div className="banner-info">
+                    <div className="container">
+                      <div className="banner-info-bg">
+                        <h5>Monday, January 4 Saturday, January 9, 2021</h5>
+                        <p className="mt-4 pr-lg-4">VIRTUAL</p>
                       </div>
                     </div>
                   </div>
-                  {/* ... (repeat similar structure for other teachers) */}
                 </div>
-              </div>
+              </li>
             </div>
           </div>
+        </div>
+        <div className="waveWrapper waveAnimation">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M-5.07,73.52 C149.99,150.00 299.66,-102.13 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style={{ stroke: 'none' }}></path>
+          </svg>
         </div>
       </section>
-      {/* testimonials */}
-      <section className="w3l-testimonials" id="clients">
-      {/* /grids */}
-      <div className="cusrtomer-layout py-5">
-        <div className="container py-lg-4 py-md-3 pb-lg-0">
-          <h5 className="title-small text-center mb-1">Testimonials</h5>
-          <h3 className="title-big text-center mb-sm-5 mb-4">Happy Clients & Feedbacks</h3>
-          {/* /grids */}
-          <div className="testimonial-width">
-            <div id="owl-demo1" className="owl-two owl-carousel owl-theme">
-              {/* Testimonial Items */}
-              <div className="item">
-                <div className="testimonial-content">
-                  <div className="testimonial">
-                    <blockquote>
-                      <q>Lorem ipsum dolor sit amet elit. Velit beatae laudantium...</q>
-                    </blockquote>
-                    <div className="testi-des">
-                      <div className="test-img"><img src="assets/images/team1.jpg" className="img-fluid" alt="client-img" /></div>
-                      <div className="peopl align-self">
-                        <h3>John wilson</h3>
-                        <p className="indentity">Student</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* ... Repeat similar structure for other testimonials */}
-            </div>
-          </div>
-        </div>
-        {/* /grids */}
+      <div>
+        <p className="container text-center"> <strong>This fourth edition of Data Science Summer School </strong>(DS3) is co-organised by the <strong><Link href="https://portail.polytechnique.edu/datascience/en">Data Science Initiative</Link></strong>  of <strong></strong><Link href="https://portail.polytechnique.edu/datascience/en"> École polytechnique</Link>, <Link href="https://portail.polytechnique.edu/datascience/en">DATAIA Institute</Link>,  and the <Link href="https://portail.polytechnique.edu/datascience/en">Chair Stress Test</Link>.</p>
+        <p className="container text-center">The primary focus of the event is to provide a series of courses covering the latest advances in the field of data science.</p>
+        <p className="container text-center">The event is targeted for students (MSc2, PhD), postdocs, academics, members of public institutions, and professionals.</p>
+        <p className="container text-center">Due to the COVID-19 pandemic, the 4th Data Science Summer School, initially planned on June 2020, has been postponed to January 2021 and it will be held virtually.</p>
+        <p className="container  text-center">This special edition of the summer school will last three days and it will include courses, parallel sessions, exhibitions, practical sessions and <Link href="https://portail.polytechnique.edu/datascience/en">poster sessions</Link> .</p>
       </div>
-      {/* //grids */}
-    </section>
-    <section className="w3l-clients py-5" id="clients">
-      <div className="call-w3 py-md-4 py-2">
-        <div className="container">
-          <div className="company-logos text-center">
-            <div className="row logos">
-              <div className="col-lg-2 col-md-3 col-4">
-                <img src="assets/images/brand1.png" alt="" className="img-fluid" />
-              </div>
-              <div className="col-lg-2 col-md-3 col-4">
-                <img src="assets/images/brand2.png" alt="" className="img-fluid" />
-              </div>
-              <div className="col-lg-2 col-md-3 col-4">
-                <img src="assets/images/brand3.png" alt="" className="img-fluid" />
-              </div>
-              <div className="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
-                <img src="assets/images/brand4.png" alt="" className="img-fluid" />
-              </div>
-              <div className="col-lg-2 col-md-3 col-4 mt-lg-0 mt-4">
-                <img src="assets/images/brand5.png" alt="" className="img-fluid" />
-              </div>
-              <div className="col-lg-2 col-md-3 col-4 mt-lg-0 mt-4">
-                <img src="assets/images/brand6.png" alt="" className="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="container text-center">
+        <h1>DS3 is composed of</h1>
       </div>
-    </section>
-    <Footer/>
-    </div>
-    )
 
+      <div>
+        <div className="circle-images-container">
+          <div className="circle">
+            <img src={image5} alt="" className="img-fluid" />
+            <div> <p>tutorials on selected topics  presented by
+              leading experts of the area1,</p>
+            </div>
+          </div>
+          <div className="circle">
+            <img src={image5} alt="" className="img-fluid" />
+          </div>
+          <div className="circle">
+            <img src={image5} alt="" className="img-fluid" />
+          </div>
+          <div className="circle">
+            <img src={image5} alt="" className="img-fluid" />
+          </div>
+        </div>
+
+        <div className="circle-text-container">
+          <div className="circle-text">
+
+            <div> <p>tutorials on selected topics
+              presented by
+              leading experts of the area1,</p></div>
+
+          </div>
+          <div className="circle-text">
+            <p>parallel sessions on Data Science for Climate and Natural Language Processing,</p>
+          </div>
+          <div className="circle-text">
+            <p>several networking facilities, including poster sessions and meeting possibilities at the sponsor booths.</p>
+          </div>
+          <div className="circle-text">
+            <p>in-depth tutorials with practical sessions during 3 days in smaller groups.</p>
+          </div>
+        </div>
+        <div className="container text-center" >
+          <h1>Statistics of the event 2019 :</h1>
+
+        </div>
+        <div className="container" style={{ marginTop: '80px' }}>
+          <div className="row">
+            <div className="col-lg-4">
+              <ul className="key-statistics-list">
+                <li>500 participants</li>
+                <li>307 students (MSc, PhD) & postdocs</li>
+                <li>105 professionals</li>
+                <li>35 experts (speakers, guests)</li>
+                <li>34 countries (click on the flags)</li>
+                <li>6 continents</li>
+                <li>13 in-depth tutorials</li>
+                <li>220 institutions</li>
+                <li>70 companies</li>
+                <li>7 sponsors</li>
+                <li>152 posters</li>
+                <li>28% women’s participation</li>
+              </ul>
+            </div>
+
+
+            <div className="col-lg-8">
+              <div className="mt-8 pr-lg-8">
+                <img
+                  src={image6}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image7}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image8}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image9}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image10}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image11}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image12}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image6}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image7}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image8}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image9}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image10}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image11}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image12}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image6}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image7}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image8}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image9}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image10}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image11}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+                <img
+                  src={image12}
+                  alt=""
+                  className="img-fluid border border-gray-500 mr-2 mb-2"
+                  style={{ width: '60px', height: '60px' }}
+                />
+
+              </div>
+            </div>
+            <div className="container text-center" >
+              <h1>Statistics of the event 2019 :</h1>
+              <div className="container text-center" style={{ display: 'flex', gap: '10px' }}>
+                <button className="container text-center" style={{ padding: '10px', backgroundColor: '#FF6B9E', color: 'white', border: 'none' }}>Twitter #XDS3</button>
+                <button className="container text-center" style={{ padding: '10px', backgroundColor: '#FF6B9E', color: 'white', border: 'none' }}>Facebook
+                </button>
+              </div>
+
+              <p>1. Participants are encouraged to present a poster during the event.</p>
+            </div>
+
+
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+      <Footer />
+    </div>
+  );
 }
-export default Home
+
+export default Home;

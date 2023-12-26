@@ -52,6 +52,66 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
+  /*
+uii*//* Styles pour les images avec des bordures en cercle */
+.circle-images-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px; /* Ajustez la marge selon vos besoins */
+}
+
+.circle {
+  width: 200px; /* Ajustez la taille du cercle selon vos besoins */
+  height: 200px; /* Ajustez la taille du cercle selon vos besoins */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px; /* Espace entre les cercles */
+  text-align: center;
+  position: relative;
+  border: 2px solid #fff; /* Ajout de la bordure (couleur blanche) */
+}
+/* Ajoutez ces styles à votre fichier de style CSS */
+.key-statistics-list {
+  list-style-type: disc; /* Vous pouvez changer disc par circle, square, etc. */
+  padding-left: 20px; /* Ajustez l'espacement à gauche selon vos préférences */
+}
+
+.key-statistics-list li {
+  margin-bottom: 10px; /* Ajoutez un espace entre chaque élément de la liste selon vos préférences */
+}
+
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Styles pour les textes au-dessous des images */
+.circle-text-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* Espace entre les divs, ajustez selon vos besoins */
+  text-align: center;
+}
+
+.circle-text {
+  /* Ajoutez une bordure pour illustrer les divs, ajustez selon vos besoins */
+  padding: 10px; /* Marge intérieure pour l'espace interne des divs, ajustez selon vos besoins */
+  margin-top: 10px; /* Espace entre les divs, ajustez selon vos besoins */
+}
+
+/* Styles spécifiques au deuxième cercle (en rose) */
+.circle{
+  border-color: #FF6B9E; /* Couleur rose pour la bordure */
+}
+
+/* Ajoutez des styles spécifiques pour chaque cercle si nécessaire */
+
+/*
+uii*/
 
 body {
   margin: 0;
