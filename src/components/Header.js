@@ -22,15 +22,16 @@ function Header(){
                 <li className="nav-item active">
                   <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                 </li>
-                <li className="nav-item @@about__active">
-                  <Link className="nav-link" to="/about">About</Link>
-                </li>
                 <li className="nav-item @@courses__active">
-                  <a className="nav-link" href="/sessions">Sessions</a>
+                  <a className="nav-link" href="/sessions">Practical Sessions</a>
+                </li>
+                <li className="nav-item @@contact__active">
+                  <Link className="nav-link" to="/KeyApp">Key dates & Applications</Link>
                 </li>
                 <li className="nav-item @@contact__active">
                   <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
+                
               </ul>
 
               {/* <div className="search-right">
