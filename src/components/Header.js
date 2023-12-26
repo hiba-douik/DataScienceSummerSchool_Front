@@ -6,7 +6,7 @@ function Header(){
           <nav className="navbar navbar-expand-lg navbar-dark stroke">
             <h1>
               <a className="navbar-brand" href="index.html">
-                <span className="fa fa-diamond"></span>Study Course <span className="logo">Journey to success</span>
+                <span className="fa fa-diamond"></span>Summer School <span className="logo">Journey to success</span>
               </a>
             </h1>
 
@@ -33,7 +33,7 @@ function Header(){
                 </li>
               </ul>
 
-              <div className="search-right">
+              {/* <div className="search-right">
                 <a href="#search" title="search"><span className="fa fa-search" aria-hidden="true"></span></a>
                 <div id="search" className="pop-overlay">
                   <div className="popup">
@@ -44,13 +44,13 @@ function Header(){
                   </div>
                   <a className="close" href="#close">&times;</a>
                 </div>
-              </div>
-              <div className="top-quote mr-lg-2 text-center">
+              </div> */}
+              {/* <div className="top-quote mr-lg-2 text-center">
                 <a href="#login" className="btn login mr-2"><span className="fa fa-user"></span> login</a>
-              </div>
+              </div> */}
             </div>
 
-            <div className="mobile-position">
+            {/* <div className="mobile-position">
               <nav className="navigation">
                 <div className="theme-switch-wrapper">
                   <label className="theme-switch" htmlFor="checkbox">
@@ -62,7 +62,7 @@ function Header(){
                   </label>
                 </div>
               </nav>
-            </div>
+            </div> */}
           </nav>
         </div>
       </header>
