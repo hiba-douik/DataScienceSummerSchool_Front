@@ -31,6 +31,9 @@ function Header(){
                 <li className="nav-item @@contact__active">
                   <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
+                <li className="nav-item @@contact__active">
+                  <Link className="nav-link" to="/posters">Posters</Link>
+                </li>
               </ul>
 
               {/* <div className="search-right">

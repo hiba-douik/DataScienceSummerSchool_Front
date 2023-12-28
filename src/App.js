@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Sessions from "./components/Sessions";
 import {Routes,Route} from 'react-router-dom'
+import Posters from "./components/posters";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <Route path="/sessions" element={<Sessions/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/about" element={<About/>}/>
+            <Route path="/posters" element={<Posters/>}/>
          </Routes>
       
     </div>
