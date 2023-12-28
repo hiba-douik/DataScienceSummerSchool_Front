@@ -28,6 +28,12 @@ function Header(){
                 <li className="nav-item @@courses__active">
                   <a className="nav-link" href="/sessions">Sessions</a>
                 </li>
+                <li className="nav-item @@courses__active">
+                  <Link className="nav-link" to="/programme">Programme</Link>
+                </li>
+                <li className="nav-item @@courses__active">
+                  <Link className="nav-link" to="/FAQ">FAQ</Link>
+                </li>
                 <li className="nav-item @@contact__active">
                   <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
