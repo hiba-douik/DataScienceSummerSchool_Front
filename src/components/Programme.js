@@ -120,7 +120,7 @@ function Programme() {
 </div>
 
 <div>
-    <Link className="lk" to="https://www.ds3-datascience-polytechnique.fr/wp-content/uploads/2020/12/DS32020-Plenary-Talks-Program.pdf">Download the pdf abstracts of all plenary lectures (January 2021)</Link>
+    <Link className="lk" to="https://www.ds3-datascience-polytechnique.fr/wp-content/uploads/2020/12/DS32020-Plenary-Talks-Program.pdf">Download the pdf abstracts of all plenary lectures (January 2023)</Link>
 </div>
      </div>
     <Footer />
