@@ -34,6 +34,9 @@ function Header(){
                 <li className="nav-item @@contact__active">
                   <Link className="nav-link" to="/posters">Posters</Link>
                 </li>
+                <li className="nav-item @@contact__active">
+                  <Link className="nav-link" to="/organizers">Organizers</Link>
+                </li>
                 <li className="nav-item @@courses__active">
                   <Link className="nav-link" to="/FAQ">FAQ</Link>
                 </li>
