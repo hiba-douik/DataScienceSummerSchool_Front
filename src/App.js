@@ -8,6 +8,7 @@ import Sessions from "./components/Sessions";
 import Posters from "./components/posters";
 import Applications from "./components/Applications";
 import Form from "./components/Form";
+import Organizers from "./components/Organizers";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/programme" element={<Programme />} />
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/about" element={<About />} />
+        <Route path="/organizers" element={<Organizers />} />
         <Route path="/form" element={<Form />} />
         <Route path="/speakers" element={<Speakers />} />
       </Routes>

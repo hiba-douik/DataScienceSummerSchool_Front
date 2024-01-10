@@ -135,9 +135,23 @@ ol>li{
   list-style-type: decimal;
 
 }
+ul>li{
+
+  color: #666!important;
+  font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+  list-style-type: disc;
+
+}
 .et_pb_divider_internal {
     display: inline-block;
     width: 100%;
+    border-bottom: 2px solid #666; 
+    font-weight: bold;
+
+}
+div  a {
+  color: var(--heading-color);
+  text-decoration: underline;
 }
 
 p,span{
@@ -205,8 +219,124 @@ li{
     vertical-align: baseline;
     background: transparent;
 }
+.page.et_pb_pagebuilder_layout #main-content {
+    background-color: transparent;
+}
+.et_pb_pagebuilder_layout .entry-content, .et_pb_pagebuilder_layout .et_pb_post .entry-content {
+    margin-bottom: 0!important;
+    padding-top: 0;
+}
+.et_builder_inner_content {
+    position: relative;
+    z-index: 1;
+}
+.et_pb_section_0.et_pb_section {
+    padding-top: 54px;
+    padding-right: 0px;
+    padding-bottom: 17px;
+    padding-left: 0px;
+    background-color: #ffffff!important;
+}
 
-
+.et_pb_row_0.et_pb_row {
+    padding-top: 21.8594px!important;
+    padding-right: 0px!important;
+    padding-bottom: 0px!important;
+    padding-left: 0px!important;
+    padding-top: 21.8594px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.et_pb_column {
+    position: relative;
+}
+.et_pb_text > :last-child {
+    list-style: none !important;
+}
+user agent stylesheet
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.et_pb_row .et_pb_column.et-last-child, .et_pb_row .et_pb_column:last-child {
+    margin-bottom: 0;
+}
+.et_pb_text > :last-child {
+    list-style: none !important;
+}
+.et_pb_bg_layout_dark,.et_pb_bg_layout_dark h1, .et_pb_bg_layout_dark h2, .et_pb_bg_layout_dark h3, .et_pb_bg_layout_dark h4, .et_pb_bg_layout_dark h5, .et_pb_bg_layout_dark h6 {
+    color: #666!important;
+} 
+.et_pb_row_1.et_pb_row {
+    padding-top: 25px!important;
+    padding-right: 0px!important;
+    padding-bottom: 45px!important;
+    padding-left: 0px!important;
+    padding-top: 25px;
+    padding-right: 0px;
+    padding-bottom: 45px;
+    padding-left: 0px;
+}
+.et_pb_divider_internal {
+    display: inline-block;
+    width: 100%;
+}
+.et_pb_row_2.et_pb_row {
+    padding-top: 0px!important;
+    padding-right: 0px!important;
+    padding-bottom: 27px!important;
+    padding-left: 0px!important;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 27px;
+    padding-left: 0px;
+}
+.et_pb_column {
+    position: relative;
+}
+.et_pb_animation_fade_in.et-animated {
+    opacity: 1;
+    -webkit-animation: fadeIn 1s cubic-bezier(.77,0,.175,1) 1;
+    animation: fadeIn 1s cubic-bezier(.77,0,.175,1) 1;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.et_pb_column_1_3 .et_pb_team_member_description {
+  display: block;
+}
+p:not(.has-background):last-of-type {
+    padding-bottom: 0;
+}
+.et_color_scheme_red a {
+    color: #fe79a2;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.et_color_scheme_red a {
+    color: #cd5c5c;
+}
       </style>
       <link rel='stylesheet' id='theme-styles-css'  href='https://www.ds3-datascience-polytechnique.fr/wp-content/themes/divi-child/style.css?ver=1609745144' type='text/css' media='all' />
       <link rel='stylesheet' id='divi-style-css'  href='https://www.ds3-datascience-polytechnique.fr/wp-content/themes/divi-child/style.css?ver=4.9.24' type='text/css' media='all' />
@@ -321,6 +451,9 @@ img.emoji {
 <!-- stats number counter-->
 <script src="assets/js/jquery.waypoints.min.js"></script>
 <script src="assets/js/jquery.countup.js"></script>
+<script type="text/javascript" src="https://www.ds3-datascience-polytechnique.fr/wp-content/themes/divi/js/custom.unified.js?ver=4.9.24"></script>
+<script type="text/javascript" src="https://www.ds3-datascience-polytechnique.fr/wp-content/themes/divi/js/custom.unified.js?ver=4.9.24"></script>
+
 <script>
   $('.counter').countUp();
 </script>
