@@ -16,7 +16,7 @@ function Form() {
       const handleSubmit = (event) => {
         event.preventDefault();
       
-        axios.post('http://localhost:8081', formData)
+        axios.post('http://localhost:8081/application/createApplication', formData)
           .then((response) => {
             console.log('Data sent successfully!', response.data);
             setFormData({
@@ -34,7 +34,7 @@ function Form() {
     
       const handleChange = (event) => {
         const { name, value, files } = event.target;
-        if (name === 'fileInput') {
+        if (name === 'fileData') {
             const selectedFile = files[0];
             setFormData({ ...formData, fileData: selectedFile });
           } else {
@@ -99,7 +99,7 @@ function Form() {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            name="Title"
+                                            name="namePoster"
                                             placeholder="Your poster's title"
                                             value={formData.namePoster}
                                             onChange={handleChange}    
@@ -109,7 +109,7 @@ function Form() {
                                     <div>
                                         <input
                                             type="file"
-                                            name="fileInput"
+                                            name="fileData"
                                             onChange={handleChange}
                                             className="file-input"
                                             accept=".pdf" 
