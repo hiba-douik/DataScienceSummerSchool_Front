@@ -25,14 +25,23 @@ function Header(){
                 <li className="nav-item @@courses__active">
                   <a className="nav-link" href="/sessions">Practical Sessions</a>
                 </li>
-                <li className="nav-item @@contact__active">
-                  <Link className="nav-link" to="/KeyApp">Key dates & Applications</Link>
+                <li className="nav-item @@courses__active">
+                  <Link className="nav-link" to="/speakers">Speakers</Link>
                 </li>
                 <li className="nav-item @@courses__active">
                   <Link className="nav-link" to="/sponsors">Sponsors</Link>
                 </li>
                 <li className="nav-item @@courses__active">
                   <Link className="nav-link" to="/programme">Programme</Link>
+                </li>
+                <li className="nav-item @@contact__active">
+                  <Link className="nav-link" to="/KeyApp">Key dates & Applications</Link>
+                </li>
+                <li className="nav-item @@contact__active">
+                  <Link className="nav-link" to="/posters">Posters</Link>
+                </li>
+                <li className="nav-item @@contact__active">
+                  <Link className="nav-link" to="/organizers">Organizers</Link>
                 </li>
                 <li className="nav-item @@courses__active">
                   <Link className="nav-link" to="/FAQ">FAQ</Link>
@@ -41,8 +50,7 @@ function Header(){
                   <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
                 
-              </ul>
-
+</ul>
               {/* <div className="search-right">
                 <a href="#search" title="search"><span className="fa fa-search" aria-hidden="true"></span></a>
                 <div id="search" className="pop-overlay">

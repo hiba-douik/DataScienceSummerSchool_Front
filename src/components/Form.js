@@ -3,6 +3,8 @@ import Footer from "./Footer"
 import axios from "axios"
 import { useState } from "react";
 import Breadcrumb from "./Breadcrumb";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Form() {
     const [formData, setFormData] = useState({
         firstName: '',
@@ -15,26 +17,42 @@ function Form() {
     
       const handleSubmit = (event) => {
         event.preventDefault();
-      
-        axios.post('http://localhost:8081', formData)
-          .then((response) => {
-            console.log('Data sent successfully!', response.data);
-            setFormData({
-                firstName: '',
-                lastName: '',
-                telephone: '',
-                email: '',
-                namePoster: '',
+
+        const data = new FormData();
+
+        data.append('firstName', formData.firstName);
+        data.append('lastName', formData.lastName);
+        data.append('email', formData.email);
+        data.append('telephone', formData.telephone);
+        data.append('namePoster', formData.namePoster);
+
+        data.append('fileData', formData.fileData);
+        axios.post('http://localhost:8081/application/createApplication', data)
+            .then((response) => {
+                if (response.data === "OK") {
+                toast.success('Your application has been successfully submitted!');
+                setFormData({
+                    firstName: '',
+                    lastName: '',
+                    telephone: '',
+                    email: '',
+                    namePoster: '',
+                    fileData: '', 
+                });
+                } else {
+                toast.error(response.data);
+                }   
+            })
+            .catch((error) => {
+                console.error('Error sending data:', error);
+                toast.error('Something went wrong, please try again');
             });
-          })
-          .catch((error) => {
-            console.error('Error sending data:', error);
-          });
+
       };
     
       const handleChange = (event) => {
         const { name, value, files } = event.target;
-        if (name === 'fileInput') {
+        if (name === 'fileData') {
             const selectedFile = files[0];
             setFormData({ ...formData, fileData: selectedFile });
           } else {
@@ -99,7 +117,7 @@ function Form() {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            name="Title"
+                                            name="namePoster"
                                             placeholder="Your poster's title"
                                             value={formData.namePoster}
                                             onChange={handleChange}    
@@ -109,7 +127,7 @@ function Form() {
                                     <div>
                                         <input
                                             type="file"
-                                            name="fileInput"
+                                            name="fileData"
                                             onChange={handleChange}
                                             className="file-input"
                                             accept=".pdf" 

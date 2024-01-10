@@ -12,10 +12,9 @@ function Footer(){
           <Link to="/contact"><button className="btn btn-outline-dark">Contact</button></Link>
         </div>
       <section className="w3l-footer-29-main">
-        
-      <div className="footer-29 py-1">
+        <div className="footer-29 py-1">
         <div className="container py-md-4 text-center">
-          <p>© École Polytechnique 2020 - All rights reserved.</p>
+          <p>© École Polytechnique 2023 - All rights reserved.</p>
         </div>
       </div>
     </section>
