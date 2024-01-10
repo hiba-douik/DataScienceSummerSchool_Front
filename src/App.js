@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Programme from "./components/Programme";
 import FAQ from "./components/FAQ";
 import Sessions from "./components/Sessions";
+import Sponsors from "./components/Sponsors";
 import Applications from "./components/Applications";
 import Form from "./components/Form";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/about" element={<About />} />
         <Route path="/form" element={<Form />} />
+        <Route path="/sponsors" element={<Sponsors />} />
       </Routes>
     </div>
   );

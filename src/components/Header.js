@@ -29,6 +29,9 @@ function Header(){
                   <Link className="nav-link" to="/KeyApp">Key dates & Applications</Link>
                 </li>
                 <li className="nav-item @@courses__active">
+                  <Link className="nav-link" to="/sponsors">Sponsors</Link>
+                </li>
+                <li className="nav-item @@courses__active">
                   <Link className="nav-link" to="/programme">Programme</Link>
                 </li>
                 <li className="nav-item @@courses__active">
