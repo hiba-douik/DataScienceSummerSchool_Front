@@ -27,7 +27,6 @@ function Form() {
         data.append('namePoster', formData.namePoster);
 
         data.append('fileData', formData.fileData);
-      
         axios.post('http://localhost:8081/application/createApplication', data)
             .then((response) => {
                 if (response.data === "OK") {
